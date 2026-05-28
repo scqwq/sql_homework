@@ -1,0 +1,10 @@
+{"timestamp": "2026-05-26T09:17:31.559420", "query": "hi", "sql": "SELECT hi FROM 员工;", "result_summary": ""}
+{"timestamp": "2026-05-26T09:17:46.405399", "query": "CREATE TABLE llz_dept (", "sql": "CREATE TABLE llz_dept (\n    deptno integer NOT NULL,\n    dname character varying NOT NULL,\n    loc character varying NULL\n);", "result_summary": ""}
+{"timestamp": "2026-05-26T09:17:51.421177", "query": "dname VARCHAR(50) NOT NULL,", "sql": "", "result_summary": ""}
+{"timestamp": "2026-05-26T09:17:54.246594", "query": ");", "sql": "CREATE TABLE llz_dept (\n    deptno integer NOT NULL,\n    dname character varying NOT NULL,\n    loc character varying NULL\n);", "result_summary": ""}
+{"timestamp": "2026-05-26T09:18:57.044529", "query": "加入dname为114514，并通过查询打印出来", "sql": "", "result_summary": ""}
+{"timestamp": "2026-05-26T09:19:13.494436", "query": "CREATE TABLE llz_dept (", "sql": "CREATE TABLE llz_dept (\n    deptno integer NOT NULL,\n    dname character varying NOT NULL,\n    loc character varying NULL\n);", "result_summary": ""}
+{"timestamp": "2026-05-26T09:19:16.421341", "query": "dname character varying NOT NULL,", "sql": "CREATE TABLE llz_dept (\n    deptno integer NOT NULL,\n    dname character varying NOT NULL,\n    loc character varying NULL\n);", "result_summary": ""}
+{"timestamp": "2026-05-26T09:19:25.956176", "query": ");", "sql": "CREATE TABLE llz_dept (\n    deptno integer NOT NULL,\n    dname character varying NOT NULL,\n    loc character varying NULL\n);", "result_summary": ""}
+{"timestamp": "2026-05-26T09:19:32.468094", "query": "CREATE TABLE llz_dept (    deptno integer NOT NULL,    dname character varying NOT NULL,    loc character varying NULL);", "sql": "CREATE TABLE llz_dept (\n    deptno integer NOT NULL,\n    dname character varying NOT NULL,\n    loc character varying NULL\n);", "result_summary": ""}
+{"timestamp": "2026-05-26T09:20:27.136617", "query": "添加一个dname为114514，其他随意的数据，并通过select展现", "sql": "INSERT INTO llz_dept (deptno, dname, loc) VALUES (1, '114514', '测试地点');\nSELECT * FROM llz_dept;", "result_summary": "返回 1 行"}

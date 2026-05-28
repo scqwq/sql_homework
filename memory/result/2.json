@@ -1,0 +1,114 @@
+[
+  {
+    "Id": 2142,
+    "Title": "Linear regression effect sizes when using transformed variables",
+    "ViewCount": 5973,
+    "Score": 7,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 18480,
+    "Title": "Interpretation of log transformed predictor",
+    "ViewCount": 6618,
+    "Score": 15,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 27067,
+    "Title": "Back-transformation of regression coefficients",
+    "ViewCount": 2441,
+    "Score": 9,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 33392,
+    "Title": "Improving transformation of dependent variable and robust regression",
+    "ViewCount": 1494,
+    "Score": 1,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 35711,
+    "Title": "Box-Cox like transformation for independent variables?",
+    "ViewCount": 3332,
+    "Score": 25,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 35982,
+    "Title": "How to interpret regression coefficients when response was transformed by the 4th root?",
+    "ViewCount": 2910,
+    "Score": 6,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 38750,
+    "Title": "How to interpret regression coefficients when outcome variable was transformed to $1 / \\\\sqrt{Y}$?",
+    "ViewCount": 984,
+    "Score": 5,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 43930,
+    "Title": "Choosing between LM and GLM for a log-transformed response variable",
+    "ViewCount": 4109,
+    "Score": 18,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 60202,
+    "Title": "R Code for Yeo-Johnson transformation",
+    "ViewCount": 421,
+    "Score": 0,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 60828,
+    "Title": "How to test a curvilinear relationship in a logistic regression",
+    "ViewCount": 1210,
+    "Score": 1,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 61514,
+    "Title": "Skewed data for regression analysis",
+    "ViewCount": 183,
+    "Score": 1,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 61547,
+    "Title": "Help me fit this non-linear multiple regression that has defied all previous efforts",
+    "ViewCount": 672,
+    "Score": 6,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 62106,
+    "Title": "Please help me refine this zero-inflated negative binomial model",
+    "ViewCount": 742,
+    "Score": 5,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 62524,
+    "Title": "Linear model: comparing predictive power of two different measurement methods",
+    "ViewCount": 586,
+    "Score": 5,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 88825,
+    "Title": "How to correct for non-linearity of response in linear regression",
+    "ViewCount": 125,
+    "Score": 4,
+    "original_post_viewcount": 4949
+  },
+  {
+    "Id": 95828,
+    "Title": "Suitable data transformation in multiple GLS regression of raw variables against PCs",
+    "ViewCount": 31,
+    "Score": 0,
+    "original_post_viewcount": 4949
+  }
+]

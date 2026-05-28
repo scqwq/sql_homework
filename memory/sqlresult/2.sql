@@ -1,0 +1,1 @@
+SELECT p.Id, p.Title, p.ViewCount, p.Score, (SELECT ViewCount FROM posts WHERE Id = 61217) AS original_post_viewcount FROM posts p WHERE p.Id IN (SELECT RelatedPostId FROM postLinks WHERE PostId = 61217 UNION SELECT PostId FROM postLinks WHERE RelatedPostId = 61217) AND p.Id != 61217;

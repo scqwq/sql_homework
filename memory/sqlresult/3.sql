@@ -1,0 +1,1 @@
+SELECT p.Score, pl.LinkTypeId FROM posts p INNER JOIN postLinks pl ON p.Id = pl.PostId WHERE p.Id = 395;

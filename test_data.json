@@ -1,0 +1,27 @@
+[  {
+    "question_id": 1,
+    "question": "What are the post history type IDs for post ID 3720 and how many unique users have commented on the post?",
+    "evidence": ""
+
+  },
+  {
+    "question_id": 2,
+    "question": "List out all post that are related to post ID 61217 and what is the popularity of this post?",
+    "evidence": "post related refers to RelatedPostId; popularity refers to ViewCount"
+  },
+  {
+    "question_id": 3,
+    "question": "What is the score and the link type ID for post ID 395?",
+    "evidence": ""
+  },
+    {
+    "question_id": 4,
+    "question": "What is the average of the up votes and the average user age for users creating more than 10 posts?",
+    "evidence": "creating more than 10 post refers to Count (UserId) > 10; average of the up votes = Divide (Sum(UpVotes), Count (UserId)); average age = Divide (Sum(Age), Count(UserId))"
+  },
+    {
+    "question_id": 5,
+    "question": "Among posts by Harvey Motulsky and Noah Snyder, which one has higher popularity?",
+    "evidence": "Has higher popularity means the post has higher view count ; calculation = MAX(SUM(ViewCount)) where DisplayName = 'Harvey Motulsky' OR DisplayName = 'Noah Snyder';"
+  }
+ ]

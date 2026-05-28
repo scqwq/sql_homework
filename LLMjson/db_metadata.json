@@ -1,0 +1,463 @@
+{
+  "database": "codebase_community.sqlite",
+  "tables": {
+    "badges": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "UserId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Name",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Date",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "comments": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "PostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Score",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Text",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CreationDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "UserId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "UserDisplayName",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "postHistory": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "PostHistoryTypeId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "PostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "RevisionGUID",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CreationDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "UserId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Text",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Comment",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "UserDisplayName",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "postLinks": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "CreationDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "PostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "RelatedPostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "LinkTypeId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "posts": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "PostTypeId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "AcceptedAnswerId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CreaionDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Score",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "ViewCount",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Body",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "OwnerUserId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "LasActivityDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Title",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Tags",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "AnswerCount",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CommentCount",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "FavoriteCount",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "LastEditorUserId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "LastEditDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CommunityOwnedDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "ParentId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "ClosedDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "OwnerDisplayName",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "LastEditorDisplayName",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "tags": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "TagName",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Count",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "ExcerptPostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "WikiPostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "users": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "Reputation",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CreationDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "DisplayName",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "LastAccessDate",
+          "type": "DATETIME",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "WebsiteUrl",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Location",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "AboutMe",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Views",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "UpVotes",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "DownVotes",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "AccountId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "Age",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "ProfileImageUrl",
+          "type": "TEXT",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    },
+    "votes": {
+      "columns": [
+        {
+          "name": "Id",
+          "type": "INTEGER",
+          "not_null": true,
+          "primary_key": true
+        },
+        {
+          "name": "PostId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "VoteTypeId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "CreationDate",
+          "type": "DATE",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "UserId",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        },
+        {
+          "name": "BountyAmount",
+          "type": "INTEGER",
+          "not_null": false,
+          "primary_key": false
+        }
+      ]
+    }
+  }
+}
