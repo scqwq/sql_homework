@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM users WHERE Views > 10 AND strftime('%Y', CreationDate) > '2013';

@@ -1,0 +1,1 @@
+SELECT ( (SUM(CASE WHEN strftime('%Y', Date) = '2010' THEN 1 ELSE 0 END) * 100.0) / COUNT(*) ) - ( (SUM(CASE WHEN strftime('%Y', Date) = '2011' THEN 1 ELSE 0 END) * 100.0) / COUNT(*) ) AS percentage_difference FROM badges WHERE Name = 'Student';

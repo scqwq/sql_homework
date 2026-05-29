@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM users WHERE LastAccessDate > '2014-09-01';

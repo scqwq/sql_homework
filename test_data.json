@@ -1,27 +1,34 @@
 [  {
     "question_id": 1,
     "question": "What are the post history type IDs for post ID 3720 and how many unique users have commented on the post?",
-    "evidence": ""
-
+    "evidence": "",
+    "sql": "SELECT 
+    (SELECT GROUP_CONCAT(DISTINCT PostHistoryTypeId) FROM postHistory WHERE PostId = 3720) AS post_history_type_ids,
+    (SELECT COUNT(DISTINCT UserId) FROM comments WHERE PostId = 3720) AS unique_commenters;"
   },
   {
     "question_id": 2,
     "question": "List out all post that are related to post ID 61217 and what is the popularity of this post?",
-    "evidence": "post related refers to RelatedPostId; popularity refers to ViewCount"
+    "evidence": "post related refers to RelatedPostId; popularity refers to ViewCount",
+    "sql": "SELECT p.*, p.ViewCount AS popularity FROM posts p WHERE p.Id IN (SELECT RelatedPostId FROM postLinks WHERE PostId = 61217);"
   },
   {
     "question_id": 3,
     "question": "What is the score and the link type ID for post ID 395?",
-    "evidence": ""
+    "evidence": "",
+    "sql": "SELECT Score, LinkTypeId FROM posts WHERE Id = 395;"
   },
     {
     "question_id": 4,
     "question": "What is the average of the up votes and the average user age for users creating more than 10 posts?",
-    "evidence": "creating more than 10 post refers to Count (UserId) > 10; average of the up votes = Divide (Sum(UpVotes), Count (UserId)); average age = Divide (Sum(Age), Count(UserId))"
+    "evidence": "creating more than 10 post refers to Count (UserId) > 10; average of the up votes = Divide (Sum(UpVotes), Count (UserId)); average age = Divide (Sum(Age), Count(UserId))",
+    "sql": "SELECT AVG(UpVotes) AS avg_up_votes, AVG(Age) AS avg_age FROM users WHERE UserId IN (SELECT UserId FROM posts GROUP BY UserId HAVING COUNT(*) > 10);"
+    
   },
     {
     "question_id": 5,
     "question": "Among posts by Harvey Motulsky and Noah Snyder, which one has higher popularity?",
-    "evidence": "Has higher popularity means the post has higher view count ; calculation = MAX(SUM(ViewCount)) where DisplayName = 'Harvey Motulsky' OR DisplayName = 'Noah Snyder';"
+    "evidence": "Has higher popularity means the post has higher view count ; calculation = MAX(SUM(ViewCount)) where DisplayName = 'Harvey Motulsky' OR DisplayName = 'Noah Snyder';",
+    "sql": "SELECT p.*, p.ViewCount AS popularity FROM posts p WHERE p.Id IN (SELECT Id FROM posts WHERE UserId IN (SELECT UserId FROM users WHERE DisplayName = 'Harvey Motulsky' OR DisplayName = 'Noah Snyder')) ORDER BY popularity DESC LIMIT 1;"
   }
  ]

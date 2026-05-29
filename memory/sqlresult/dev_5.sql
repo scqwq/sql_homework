@@ -1,0 +1,1 @@
+SELECT COUNT(*) FROM users WHERE UpVotes > 100 AND DownVotes > 1;

@@ -1,0 +1,1 @@
+SELECT AVG(CASE WHEN u.Age > 65 THEN 100.0 ELSE 0.0 END) AS percentage FROM posts p LEFT JOIN users u ON p.OwnerUserId = u.Id WHERE p.Score > 5;

@@ -1,0 +1,1 @@
+SELECT CASE WHEN p.ClosedDate IS NOT NULL THEN 'well-finished' ELSE 'not well-finished' END AS post_status FROM comments c JOIN posts p ON c.PostId = p.Id WHERE c.UserId = 23853 AND c.CreationDate = '2013-07-12 09:08:18.0' LIMIT 1;
